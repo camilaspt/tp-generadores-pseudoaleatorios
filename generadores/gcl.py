@@ -16,6 +16,6 @@ class GCL:
         return self.sig_entero() / self.modulo
 
     def generar(self, cant: int) -> list[float]:
-        if cantidad <= 0:
+        if cant <= 0:
             raise ValueError("La cant debe ser mayor que cero")
-        return [self.siguiente() for _ in range(cantidad)]
+        return [self.siguiente() for _ in range(cant)]
